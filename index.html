@@ -1,120 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.1/dist/terminal.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.1/dist/terminal.min.css" />
-    <title>Ramadhan | Portofolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <title>Home</title>
     <style>
-        :root {
-            --global-font-size: 15px;
-            --global-line-height: 1.4em;
-            --global-space: 10px;
-            --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
-                DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-                serif;
-            --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
-                DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-                serif;
-            --background-color: #222225;
-            --page-width: 60em;
-            --font-color: #e8e9ed;
-            --invert-font-color: #222225;
-            --secondary-color: #a3abba;
-            --tertiary-color: #a3abba;
-            --primary-color: #62c4ff;
-            --error-color: #ff3c74;
-            --progress-bar-background: #3f3f44;
-            --progress-bar-fill: #62c4ff;
-            --code-bg-color: #3f3f44;
-            --input-style: solid;
-            --display-h1-decoration: none;
-        }
-
-        .custom-1 {
-            margin-bottom: 0px;
-            margin-top: 0px;
-            padding: 0%;
-        }
+      .bg-white {
+        background-color: #ffffff;
+      }
     </style>
-</head>
+  </head>
+  <body>
+    <!-- Wrap Page dan Set Seluruh Halaman Berwarna bg-secondary -->
+    <div class="bg-secondary">
+      <!-- Header -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">DevRam</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link btn btn-secondary text-light" aria-current="page" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./tokoelektronika.html">Toko Elektronika</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./jasaaplikasi.html">Jasa Aplikasi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About Me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L34.3,197.3C68.6,203,137,213,206,186.7C274.3,160,343,96,411,101.3C480,107,549,181,617,192C685.7,203,754,149,823,128C891.4,107,960,117,1029,122.7C1097.1,128,1166,128,1234,122.7C1302.9,117,1371,107,1406,101.3L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+      </header>
+      <!-- End Header -->
 
-<body>
-    <header class="terminal-logo container custom-1">
-        <div class="logo terminal-prompt"><a href="https://terminalcss.xyz" class="no-style">Bandahara</a></div>
-    </header>
-    <section class="container custom-1">
-        <table>
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Movie</th>
-                    <th>Downloads</th>
-                </tr>
-            </thead>
-            <tfoot>
-                <tr>
-                    <th colspan="4">torrentfreak.com</th>
-                </tr>
-            </tfoot>
-            <tbody>
-                <tr>
-                    <th>1</th>
-                    <td>Fast Five</td>
-                    <td>9,260,000</td>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <td>The Hangover II</td>
-                    <td>8,840,000</td>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <td>Thor</td>
-                    <td>8,330,000</td>
-                </tr>
-                <tr>
-                    <th>4</th>
-                    <td>Source Code</td>
-                    <td>7,910,000</td>
-                </tr>
-                <tr>
-                    <th>5</th>
-                    <td>I Am Number Four</td>
-                    <td>7,670,000</td>
-                </tr>
-                <tr>
-                    <th>6</th>
-                    <td>Sucker Punch</td>
-                    <td>7,200,000</td>
-                </tr>
-                <tr>
-                    <th>7</th>
-                    <td>127 Hours</td>
-                    <td>6,910,000</td>
-                </tr>
-                <tr>
-                    <th>8</th>
-                    <td>Rango</td>
-                    <td>6,480,000</td>
-                </tr>
-                <tr>
-                    <th>9</th>
-                    <td>The King’s Speech</td>
-                    <td>6,250,000</td>
-                </tr>
-                <tr>
-                    <th>10</th>
-                    <td>Harry Potter and the Deathly Hallows Part 2</td>
-                    <td>6,030,000</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-</body>
+      <!-- Main Content -->
+      <main class="">
+          <div class="container">
+              <h1 class="text-light text-center display-2">Welcome!</h1>
+              <div class="row">
+                <div class="col-md-4 mt-2">
+                  <div class="card shadow">
+                     <img src="Asset/5583.jpg" alt="Toko Elektronika" class="card-img-top">
+                     <div class="card-body">
+                         <h5 class="card-title text-center">Toko Elektronika</h5>
+                         <p class="card-text">Toko komponen-komponen elektronik dijambi.</p>
+                         <a href="./tokoelektronika.html" class="stretched-link"></a>
+                     </div>
+                  </div>
+              </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card shadow">
+                       <img src="Asset/3331057.jpg" alt="Jasaaplikasi" class="card-img-top">
+                       <div class="card-body">
+                           <h5 class="card-title text-center">Jasa Aplikasi</h5>
+                           <p class="card-text">Jasa pembuatan aplikasi arduino dan aplikasi berbasis web.</p>
+                           <a href="./jasaaplikasi.html" class="stretched-link"></a>
+                       </div>
+                    </div>
+                </div>
+                  <div class="col-md-4 mt-2">
+                      <div class="card">
+                         <img src="Asset/50426.jpg" alt="About Me" class="card-img-top">
+                         <div class="card-body">
+                             <h5 class="card-title text-center">About Me</h5>
+                             <p class="card-text">Portopolio dan kontak saya.</p>
+                             <a href="./about.html" class="stretched-link"></a>
+                         </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L34.3,197.3C68.6,203,137,213,206,186.7C274.3,160,343,96,411,101.3C480,107,549,181,617,192C685.7,203,754,149,823,128C891.4,107,960,117,1029,122.7C1097.1,128,1166,128,1234,122.7C1302.9,117,1371,107,1406,101.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+      </main>
+      <!-- End Main Content -->
+      <!-- Footer -->
+      <footer class="bg-white">
+        <p class="text-center">Created with 
+          <i class="bi bi-filetype-html"></i>
+          <i class="bi bi-filetype-css"></i>
+          <i class="bi bi-bootstrap"></i>
 
+          by <a href="#" class="text-dark fw-bold">Ramadhan</a>
+        </p>
+        <p class="text-center">
+          Picture in this page provided by <a href="http://www.freepik.com" class="text-dark fw-bold">freepik.com</a>
+        </p>
+      </footer>
+      <!-- End Footer -->
+    </div>
+    <!-- End Wrap Page -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
