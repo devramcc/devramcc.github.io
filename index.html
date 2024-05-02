@@ -1,141 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <title>My Portofolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-    <title>Home</title>
-    <style>
-      .bg-white {
-        background-color: #ffffff;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Wrap Page dan Set Seluruh Halaman Berwarna bg-secondary -->
-    <div class="bg-secondary">
-      <!-- Header -->
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">DevRam</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link btn btn-secondary text-light" aria-current="page" href="./index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./tokoelektronika.html">Toko Elektronika</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./jasaaplikasi.html">Jasa Aplikasi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./about.html">About Me</a>
-                </li>
-              </ul>
+  <!-- Bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  <style>
+    .bg-white {
+      background-color: #ffffff;
+    }
+
+    .jumbotron {
+      padding-top: 2rem;
+      background-color: #e2edff;
+    }
+
+    .bg-lightblue {
+      background-color: #a2d9ff;
+    }
+
+    .btn-lightblue {
+      background-color: #a2d9ff;
+    }
+
+    .bg-whiteblue {
+      background-color: #e2edff;
+    }
+
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .custom_justify {
+      text-align: justify;
+    }
+
+    /* Custom CSS to remove blue border and fill when accordion is open */
+    .accordion-button {
+      box-shadow: none !important;
+      /* Remove the box shadow */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Wrap Page dan Set Seluruh Halaman Berwarna bg-secondary -->
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">DevRam</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="btn btn-secondary text-light" aria-current="page" href="./about.html">My Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/ramadhan31/recent-activity/all/" target="_blank">My Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header -->
+  <main class="mt-4 d-flex flex-column justify-content-between align-items-center">
+    <!-- Summary -->
+    <img class="rounded-circle mb-2 img-fluid" alt="avatar1" src="./Asset/profile.png"
+      style="max-width: 250px; width: 100%;" />
+    <h2 class="text-center mb-1">Ramadhan</h2>
+
+    <!-- Links Start -->
+    <div class="btn-group mb-3" role="group" aria-label="Basic mixed styles example">
+      <a href="https://www.linkedin.com/in/ramadhan31" class="btn btn-primary" target="_blank"><span><i
+            class="bi bi-linkedin"></i></span> LinkedIn</a>
+      <a href="https://github.com/devramcc" class="btn btn-secondary" target="_blank"><span><i
+            class="bi bi-github"></i></span> GitHub</a>
+      <a href="https://wakatime.com/devramcc" class="btn btn-secondary" style="filter:brightness(80%);"
+        target="_blank"><span><img src="./Asset/logo/wakatime.png" style="max-width: 16px; max-height: 16px;"></span>
+        WakaTime</a>
+    </div>
+    <!-- Links End -->
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-12">
+          <p class="custom_justify">Computer Science Graduate from Universitas Dinamika Bangsa and a proud graduate of
+            the Bangkit2023 Batch 1 and Batch 2 programs, specializing in Machine Learning and Cloud Computing paths. In
+            my roleas Chairman of the UNAMA Programming Community (UKM Programming), I led the successful execution
+            ofthe "Bootcamp UPC" program, fostering growth and skill development among participants. Additionally, I am
+            acertified TensorFlow Developer, leveraging my expertise in building and deploying machine learning
+            models.Continuously, I am dedicated to expanding my knowledge and skills on the Google Cloud Platform,
+            furtherenhancing my proficiency in cloud computing.</p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Experience
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
+                    <!-- Start Timeline Bangkit CC-->
+                    <div class="row">
+                      <div class="col-auto text-center flex-column d-none d-sm-flex">
+                        <div class="row h-50">
+                          <div class="col">&nbsp;</div>
+                          <div class="col">&nbsp;</div>
+                        </div>
+                        <h5 class="m-2">
+                          <span class="badge rounded-circle bg-secondary border bg-success border-success"
+                            style="filter: brightness(160%);">&nbsp;</span>
+                        </h5>
+                        <div class="row h-50">
+                          <div class="col border-end border-4" style="border-color: #666; border-width: 3px;">&nbsp;
+                          </div>
+                          <div class="col">&nbsp;</div>
+                        </div>
+                      </div>
+                      <div class="col py-2">
+                        <div class="card border-success shadow">
+                          <div class="card-body">
+                            <div class="float-end fst-italic">Aug 2023 - Dec 2023</div>
+                            <div class="row align-item-center">
+                              <div class="col-auto d-none d-md-block">
+                                <img src="./Asset/logo/bangkit.png" alt="" style="max-width: 50px; max-height: 50px;">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-muted">Bangkit Graduate 2023 Batch 2 - Cloud Computing Path
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Bangkit Academy led by Google, Tokopedia,
+                                  Gojek, & Traveloka</h6>
+                              </div>
+                            </div>
+                            <ul class="mt-2 list-group list-group-flush">
+                              <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-book me-3"></i>
+                                <p class="mb-0 custom_justify">As the Project Manager and Cloud Engineer for our
+                                  capstone team, I've seamlessly integrated leadership and technical expertise to drive
+                                  the development and deployment of FileManager.AI</p>
+                              </li>
+                              <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-people me-3"></i>
+                                <p class="mb-0 custom_justify">In my role as Project Manager, I've managed team dynamics
+                                  by facilitating clear communication, efficient task delegation, and progress tracking
+                                  using Trello and adhering to Agile Scrum methodology principles.</p>
+                              </li>
+                              <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-cloud me-3"></i>
+                                <p class="mb-0 custom_justify">Concurrently, as a Cloud Engineer, I spearheaded the
+                                  deployment of FileManager.AI on the Google Cloud Platform, meticulously configuring
+                                  cloud resources while optimizing performance.</p>
+                              </li>
+                            </ul>
+
+                            <div class="row row-cols-1 row-cols-md-2 g-4 mt-1">
+                              <div class="col-md-12 mt-4">
+                                  <div class="card">
+                                      <img src="Asset/certificate/bangkit_cc/capstone.png" style="width: 100%; height: auto;" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                          <h6 class="card-title text-center text-muted">My Capstone Project<br>FileManager.AI</h6>
+                                          <a href="https://github.com/orgs/CH2-PS586/" target="_blank" class="stretched-link"></a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Timeline -->
+
+                    <!-- Start Timeline Bangkit ML-->
+                    <div class="row">
+                      <div class="col-auto text-center flex-column d-none d-sm-flex">
+                        <div class="row h-50">
+                          <div class="col border-end border-4">&nbsp;</div>
+                          <div class="col">&nbsp;</div>
+                        </div>
+                        <h5 class="m-2">
+                          <span class="badge rounded-circle bg-secondary border"
+                            style="filter: brightness(160%);">&nbsp;</span>
+                        </h5>
+                        <div class="row h-50">
+                          <div class="col border-end border-4" style="border-color: #666; border-width: 3px;">&nbsp;
+                          </div>
+                          <div class="col">&nbsp;</div>
+                        </div>
+                      </div>
+                      <div class="col py-2">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="float-end fst-italic">Feb 2023 - Jul 2023</div>
+                            <div class="row align-item-center">
+                              <div class="col-auto d-none d-md-block">
+                                <img src="./Asset/logo/bangkit.png" alt="" style="max-width: 50px; max-height: 50px;">
+                              </div>
+                              <div class="col">
+                                <h5 class="card-title text-muted">Bangkit Graduate 2023 Batch 1 - Machine Learning Path
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Bangkit Academy led by Google, Tokopedia,
+                                  Gojek, & Traveloka</h6>
+                              </div>
+                            </div>
+                            <ul class="mt-2 list-group list-group-flush">
+                              <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-people me-3"></i>
+                                <p class="mb-0 custom_justify">Actively participated in creating a machine learning
+                                  model for image classification as part of our capstone project.</p>
+                              </li>
+                              <li class="list-group-item d-flex align-items-center">
+                                <i class="bi bi-robot me-3"></i>
+                                <p class="mb-0 custom_justify">Successfully obtained the TensorFlow Developer
+                                  Certificate, certifying proficiency in utilizing TensorFlow for building and deploying
+                                  machine learning models.</p>
+                              </li>
+                            </ul>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Timeline -->
+
+                  <!-- Start Timeline Komunitas Programming UNAMA-->
+                  <div class="row">
+                    <div class="col-auto text-center flex-column d-none d-sm-flex">
+                      <div class="row h-50">
+                        <div class="col border-end border-4">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                      </div>
+                      <h5 class="m-2">
+                        <span class="badge rounded-circle bg-secondary border"
+                          style="filter: brightness(160%);">&nbsp;</span>
+                      </h5>
+                      <div class="row h-50">
+                        <div class="col border-end border-4" style="border-color: #666; border-width: 3px;">&nbsp;
+                        </div>
+                        <div class="col">&nbsp;</div>
+                      </div>
+                    </div>
+                    <div class="col py-2">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="float-end fst-italic">Sep 2022 - Sep 2023</div>
+                          <div class="row align-item-center">
+                            <div class="col-auto d-none d-md-block">
+                              <img src="./Asset/logo/programming.png" alt="" style="max-width: 50px; max-height: 50px;">
+                            </div>
+                            <div class="col">
+                              <h5 class="card-title text-muted">Ketua UMUM</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Komunitas Programming UNAMA</h6>
+                            </div>
+                          </div>
+                          <ul class="mt-2 list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                              <i class="bi bi-globe me-3"></i>
+                              <p class="mb-0 custom_justify">successfully creating Documentation Website for Komunitas
+                                Programming UNAMA.</p>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                              <i class="bi bi-calendar-check me-3"></i>
+                              <p class="mb-0 custom_justify">Responsible for Creating, Planing and Excuting program
+                                “Bootcamp UPC”.</p>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                              <i class="bi bi-calendar-check me-3"></i>
+                              <p class="mb-0 custom_justify">Responsible for Creating, Planing and Excuting Program
+                                “Sharing Session”.</p>
+                            </li>
+                          </ul>
+
+                          <div class="row row-cols-1 row-cols-md-2 g-4 mt-1">
+                            <div class="col-md-12 mt-4">
+                              <div class="card">
+                                <img src="Asset/certificate/programming/2023SRTSTKU_1.jpg"
+                                  style="width: 100%; height: auto;" alt="...">
+                                <div class="card-body">
+                                  <h6 class="card-title text-center text-muted">Certificate of Appreciation</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Timeline -->
+
+                  </div>
+                  <!-- End Timeline -->
+
+                  <!-- Start Timeline Komunitas Programming UNAMA-->
+                  <div class="row">
+                    <div class="col-auto text-center flex-column d-none d-sm-flex">
+                      <div class="row h-50">
+                        <div class="col border-end border-4">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                      </div>
+                      <h5 class="m-2">
+                        <span class="badge rounded-circle bg-secondary border"
+                          style="filter: brightness(160%);">&nbsp;</span>
+                      </h5>
+                      <div class="row h-50">
+                        <div class="col border-end border-4" style="border-color: #666; border-width: 3px;">&nbsp;
+                        </div>
+                        <div class="col">&nbsp;</div>
+                      </div>
+                    </div>
+                    <div class="col py-2">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="float-end fst-italic">Oct 2021 - Sep 2022</div>
+                          <div class="row align-item-center">
+                            <div class="col-auto d-none d-md-block">
+                              <img src="./Asset/logo/programming.png" alt="" style="max-width: 50px; max-height: 50px;">
+                            </div>
+                            <div class="col">
+                              <h5 class="card-title text-muted">Ketua Divisi Web-Based</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Komunitas Programming UNAMA</h6>
+                            </div>
+                          </div>
+                          <ul class="mt-2 list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                              <i class="bi bi-people me-3"></i>
+                              <p class="mb-0 custom_justify">One of the founding members of "Komunitas Programming
+                                UNAMA".</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Timeline -->
+
+                  <!-- Start Timeline UKM Robotik-->
+                  <div class="row">
+                    <div class="col-auto text-center flex-column d-none d-sm-flex">
+                      <div class="row h-50">
+                        <div class="col border-end border-4">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                      </div>
+                      <h5 class="m-2">
+                        <span class="badge rounded-circle bg-secondary border"
+                          style="filter: brightness(160%);">&nbsp;</span>
+                      </h5>
+                      <div class="row h-50">
+                        <div class="col" style="border-color: #666; border-width: 3px;">&nbsp;
+                        </div>
+                        <div class="col">&nbsp;</div>
+                      </div>
+                    </div>
+                    <div class="col py-2">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="float-end fst-italic">Mar 2021 - Des 2022</div>
+                          <div class="row align-item-center">
+                            <div class="col-auto d-none d-md-block">
+                              <img src="./Asset/logo/robotik.png" alt="" style="max-width: 50px; max-height: 50px;">
+                            </div>
+                            <div class="col">
+                              <h5 class="card-title text-muted">Ketua Divisi Programming</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">UKM Robotik UNAMA</h6>
+                            </div>
+                          </div>
+                          <div class="row row-cols-1 row-cols-md-2 g-4 mt-1">
+                            <div class="col-md-12 mt-4">
+                              <div class="card">
+                                <img src="Asset/certificate/robotik/robotik.png" style="width: 100%; height: auto;"
+                                  alt="...">
+                                <div class="card-body">
+                                  <h6 class="card-title text-center text-muted">Certificate of Appreciation</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Timeline -->
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Education
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="float-end fst-italic">Sep 2020 - Apr 2024</div>
+                      <div class="row align-item-center">
+                        <div class="col-auto d-none d-md-block">
+                          <img src="./Asset/logo/unama.png" alt="" style="max-width: 50px; max-height: 50px;">
+                        </div>
+                        <div class="col">
+                          <h5 class="card-title text-muted">Fakultas Ilmu Komputer Program Studi Teknik Informatika</h5>
+                          <h6 class="card-subtitle text-muted">Universitas Dinamika Bangsa</h6>
+                          <h7 class="card-subtitle fst-italic">GPA 3.96 / 4</h7>
+                        </div>
+                      </div>
+                      <ul class="mt-2 list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center">
+                          <i class="bi bi-book me-3"></i>
+                          <p class="mb-0 custom_justify">Participate on MSIB Kampus Merdeka "Bangkit Academy led by
+                            Google, Tokopedia, Gojek, & Traveloka" Cloud Computing Path</p>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                          <i class="bi bi-book me-3"></i>
+                          <p class="mb-0 custom_justify">Participate on MSIB Kampus Merdeka "Bangkit Academy led by
+                            Google, Tokopedia, Gojek, & Traveloka" Machine Learning Path</p>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                          <i class="bi bi-people me-3"></i>
+                          <p class="mb-0 custom_justify">Active on campus organization especially "UKM Robotik" and
+                            "Komunitas Programming UNAMA".</p>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                          <i class="bi bi-award me-3"></i>
+                          <p class="mb-0 custom_justify">Participate on "Pagelaran Mahasiswa Nasional Bidang Teknologi
+                            Informasi dan Komunikasi (GEMASTIK) Tingkat Nasional Tahun 2021 Divisi Pemrograman"</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Some of My Best Certification
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="alert alert-info" role="alert">
+                  You can see all my Certification and License on <a
+                    href="https://www.linkedin.com/in/ramadhan31/details/certifications/" target="_blank" alert-link">My
+                    LinkedIn</a>. Thank you!.
+                </div>
+                <div class="accordion-body">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/88912192"
+                          class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">TensorFlow Developer Certificate</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">TensorFlow Certificate Program</h6>
+                          <p class="card-text">Issued Dec 2023<br>Expires Dec 2026</p>
+                          <a href="https://www.credential.net/53c03f4f-63c3-4d61-81c8-85ae341ef76e" target="_blank"
+                            class="btn btn-outline-secondary">Credential ID: 88912192</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="Asset/certificate/ITS.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">IT Specialist in Artificial Intelligence</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Certiport - A Pearson VUE Business</h6>
+                          <p class="card-text">Issued Jan 2024</p>
+                          <a href="https://www.credly.com/badges/9d4ed09b-1df6-4333-9b31-acdd8625b524/public_url"
+                            target="_blank" class="btn btn-outline-secondary">Credential ID: EJ4v-XMVs</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="Asset/certificate/TOEFL_UNAMA.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">TOEFL UNAMA</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Universitas Dinamika Bangsa</h6>
+                          <p class="card-text">Issued Jan 2024</p>
+                          <a href="https://drive.google.com/file/d/1yCOTIVhf7664fr_FIB8vlIat6j1NXlUK/view?usp=drive_link"
+                            target="_blank" class="btn btn-outline-secondary">Credential ID: 2Eo9n2lD3X</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="Asset/certificate/Gemastik.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Gemastik</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Pusat Prestasi Nasional</h6>
+                          <p class="card-text">Issued Oct 2021</p>
+                          <a href="https://drive.google.com/file/d/1vij665xVr2Oe85JHLljjt6I8uLJIp2mB/view?usp=sharing"
+                            target="_blank" class="btn btn-outline-secondary">Credential ID: 1944/J3/KM.02.10/2021</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </nav>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L34.3,197.3C68.6,203,137,213,206,186.7C274.3,160,343,96,411,101.3C480,107,549,181,617,192C685.7,203,754,149,823,128C891.4,107,960,117,1029,122.7C1097.1,128,1166,128,1234,122.7C1302.9,117,1371,107,1406,101.3L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
-      </header>
-      <!-- End Header -->
-
-      <!-- Main Content -->
-      <main class="">
-          <div class="container">
-              <h1 class="text-light text-center display-2">Welcome!</h1>
-              <div class="row">
-                <div class="col-md-4 mt-2">
-                  <div class="card shadow">
-                     <img src="Asset/5583.jpg" alt="Toko Elektronika" class="card-img-top">
-                     <div class="card-body">
-                         <h5 class="card-title text-center">Toko Elektronika</h5>
-                         <p class="card-text">Toko komponen-komponen elektronik dijambi.</p>
-                         <a href="./tokoelektronika.html" class="stretched-link"></a>
-                     </div>
-                  </div>
-              </div>
-                <div class="col-md-4 mt-2">
-                    <div class="card shadow">
-                       <img src="Asset/3331057.jpg" alt="Jasaaplikasi" class="card-img-top">
-                       <div class="card-body">
-                           <h5 class="card-title text-center">Jasa Aplikasi</h5>
-                           <p class="card-text">Jasa pembuatan aplikasi arduino dan aplikasi berbasis web.</p>
-                           <a href="./jasaaplikasi.html" class="stretched-link"></a>
-                       </div>
-                    </div>
-                </div>
-                  <div class="col-md-4 mt-2">
-                      <div class="card">
-                         <img src="Asset/50426.jpg" alt="About Me" class="card-img-top">
-                         <div class="card-body">
-                             <h5 class="card-title text-center">About Me</h5>
-                             <p class="card-text">Portopolio dan kontak saya.</p>
-                             <a href="./about.html" class="stretched-link"></a>
-                         </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L34.3,197.3C68.6,203,137,213,206,186.7C274.3,160,343,96,411,101.3C480,107,549,181,617,192C685.7,203,754,149,823,128C891.4,107,960,117,1029,122.7C1097.1,128,1166,128,1234,122.7C1302.9,117,1371,107,1406,101.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-      </main>
-      <!-- End Main Content -->
-      <!-- Footer -->
-      <footer class="bg-white">
-        <p class="text-center">Created with 
-          <i class="bi bi-filetype-html"></i>
-          <i class="bi bi-filetype-css"></i>
-          <i class="bi bi-bootstrap"></i>
-
-          by <a href="#" class="text-dark fw-bold">Ramadhan</a>
-        </p>
-        <p class="text-center">
-          Picture in this page provided by <a href="http://www.freepik.com" class="text-dark fw-bold">freepik.com</a>
-        </p>
-      </footer>
-      <!-- End Footer -->
+        </div>
+      </div>
     </div>
-    <!-- End Wrap Page -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
+  </main>
+
+
+
+
+  <!-- Footer -->
+  <footer class="mt-3 bg-white">
+    <p class="text-center" style="margin: 0; padding: 0;">
+      Created with
+      <i class="bi bi-filetype-html"></i>
+      <i class="bi bi-filetype-css"></i>
+      <i class="bi bi-bootstrap"></i>
+
+      by <a href="#" class="text-dark fw-bold">Ramadhan</a>
+    </p>
+    <p class="text-center mb-2" style="margin: 0; padding: 0;">
+      Picture in this page provided by
+      <a href="http://www.freepik.com" class="text-dark fw-bold">freepik.com</a>
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
